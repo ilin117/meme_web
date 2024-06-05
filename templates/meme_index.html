@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Website</title>
+    <link
+      rel="stylesheet"
+      href=" {{ url_for('static', filename='css/format.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="{{ url_for('static', filename='js/button.js') }}"></script>
+  </head>
+
+  <body>
+    <p><img id="meme" src="{{meme_pic}}" width="auto" height="600" /></p>
+    <p class="text">
+      Liked the meme?
+      <a href="{{post_link}}">Check the original post out!</a>
+    </p>
+    <p>
+      <button id="refresh" onclick="refreshPage()">
+        New Meme <i class="fa fa-refresh"></i>
+      </button>
+    </p>
+  </body>
+</html>

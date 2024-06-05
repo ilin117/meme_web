@@ -1,0 +1,28 @@
+body {
+  background-position: top left;
+  background-color: black;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: black;
+}
+
+p {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-style: normal;
+}
+
+p.text {
+  color: white;
+}
+
+button#refresh {
+  text-align: left;
+  font-size: 25px;
+}
